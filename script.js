@@ -78,7 +78,7 @@ function loadImages() {
 
         const chunk = babyShower.slice(currentIndex, currentIndex + chunkSize);
         chunk.forEach(image => {
-            const element = `<img src='./${image}' load="lazy" alt=${image} style="width:100%" />`;
+            const element = `<img src='.babyShower/${image}' load="lazy" alt=${image} style="width:100%" />`;
             currentIndex++;
             if (currentIndex % 2 === 0) {
                 c1.innerHTML += element;
