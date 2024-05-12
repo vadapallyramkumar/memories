@@ -1,4 +1,4 @@
-const events = ['BabyShower', 'Marriage', 'Reception', 'Manali']
+const events = ['Marriage', 'Reception', 'Manali', 'BabyShower']
 
 function showContent(tabId) {
     const contentDivs = document.querySelectorAll('.content');
