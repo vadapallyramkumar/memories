@@ -1,4 +1,6 @@
-const events = ['Marriage', 'Reception', 'Manali', 'BabyShower']
+const events = [ 'BabyShower', 'Marriage', 'Reception', 'Manali']
+const c1 = document.getElementById('c1');
+const c2 = document.getElementById('c2');
 
 function showContent(tabId) {
     const contentDivs = document.querySelectorAll('.content');
@@ -6,6 +8,8 @@ function showContent(tabId) {
         if (div.id === tabId) {
             div.style.display = 'block';
             if (tabId === 'babyshower') {
+                c1.innerHTML = '';
+                c2.innerHTML = '';
                 loadImages();
             }
         } else {
@@ -73,8 +77,7 @@ function loadImages() {
     let currentIndex = 0;
 
     function loadImages(chunkSize) {
-        const c1 = document.getElementById('c1');
-        const c2 = document.getElementById('c2');
+        
 
         const chunk = babyShower.slice(currentIndex, currentIndex + chunkSize);
         chunk.forEach(image => {
