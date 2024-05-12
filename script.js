@@ -16,7 +16,7 @@ function showContent(tabId) {
 
 function loadImages() {
     const babyShower = [
-        'DSC00067.JPG', 
+        '67.JPG', 
         'DSC00085.JPG',
         'DSC00389.JPG',
         'DSC00078.JPG',
