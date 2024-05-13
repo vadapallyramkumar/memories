@@ -36,7 +36,6 @@ function loadImages() {
         '198.jpg',
         '220.jpg',
         '224.jpg',
-        '241.jpg',
         '248.jpg',
         '254.jpg',
         '260.jpg',
@@ -50,12 +49,16 @@ function loadImages() {
         '367.jpg',
         '370.jpg',
         '376.jpg',
+        '241.jpg',
+        '494.jpg',
+        '454.jpg',
+        '462.jpg',
         '381.jpg',
+        '407.jpg',
         '387.jpg',
         '391.jpg',
         '393.jpg',
         '397.jpg',
-        '407.jpg',
         '413.jpg',
         '415.jpg',
         '419.jpg',
@@ -65,23 +68,17 @@ function loadImages() {
         '426.jpg',
         '427.jpg',
         '432.jpg',
-        '454.jpg',
-        '462.jpg',
         '482.jpg',
         '496.jpg',
-        '494.jpg',
-        '497.jpg',
     ];
 
     const CHUNK_SIZE = 10;
     let currentIndex = 0;
 
     function loadImages(chunkSize) {
-        
-
         const chunk = babyShower.slice(currentIndex, currentIndex + chunkSize);
         chunk.forEach(image => {
-            const element = `<img src='./babyShower/${image}' load="lazy" alt=${image} style="width:100%" />`;
+            const element = `<img src='./babyShower/${image}' class="image" load="lazy" alt=${image} style="width:100%" />`;
             currentIndex++;
             if (currentIndex % 2 === 0) {
                 c1.innerHTML += element;
@@ -96,9 +93,9 @@ function loadImages() {
     let content = document.querySelector('#babyshower');
     if (content) {
         content.addEventListener('scroll', function() {
-            if (content.scrollTop + content.clientHeight >= content.scrollHeight) {
+            if (content.scrollTop + content.clientHeight >= content.scrollHeight - 10 || content.scrollTop <= 10) {
                 loadImages(CHUNK_SIZE);
-                console.log('load')
+                console.log('load');
             }
         });
     }
