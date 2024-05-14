@@ -15,9 +15,10 @@
   letter-spacing: 2px;
   display: flex;
   align-items: end;
-  padding: 20px 45px;
+  padding: 20px 25px;
   font-weight: bold;
-  color: white;
+  color: rgb(27, 27, 25);
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .home div:hover {
@@ -30,8 +31,14 @@
   background-image: url(./images/babyshower.jpg);
   background-position: center 15%;
   background-size: cover;
-  font-family: "Playfair Display", serif;
 }
+.marriage, .reception, .manali {
+  background-image: url(./images/soon.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 .close {
   top: 10px;

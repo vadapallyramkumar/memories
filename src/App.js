@@ -16,9 +16,15 @@ function App() {
             <div className='babyshower' onClick={() => setShowGallery(!showGallery)}>
               BABY SHOWER
             </div>
-            <div className='marriage'></div>
-            <div className='reception'></div>
-            <div className='manali'></div>
+            <div className='marriage'>
+              MARRIAGE
+            </div>
+            <div className='reception'>
+              RECEPTION
+            </div>
+            <div className='manali'>
+              MANALI
+            </div>
           </div>
         )
       }
