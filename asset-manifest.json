@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/memories/static/css/main.ede2cc89.css",
-    "main.js": "/memories/static/js/main.c67f6a56.js",
+    "main.css": "/memories/static/css/main.6fb7ce37.css",
+    "main.js": "/memories/static/js/main.58a87ee6.js",
     "static/js/453.dc839ce1.chunk.js": "/memories/static/js/453.dc839ce1.chunk.js",
     "static/media/babyshower.jpg": "/memories/static/media/babyshower.4a31d7d1abc5dd65f5be.jpg",
     "static/media/119.jpg": "/memories/static/media/119.2395fc2962dda5762665.jpg",
@@ -53,13 +53,14 @@
     "static/media/254.jpg": "/memories/static/media/254.6843ae8341e5fce85e75.jpg",
     "static/media/397.jpg": "/memories/static/media/397.6b0d7706b196a6b904df.jpg",
     "static/media/104.jpg": "/memories/static/media/104.badc50dd468cb1ccfff7.jpg",
+    "static/media/soon.webp": "/memories/static/media/soon.8942819c5f94ca6dde18.webp",
     "index.html": "/memories/index.html",
-    "main.ede2cc89.css.map": "/memories/static/css/main.ede2cc89.css.map",
-    "main.c67f6a56.js.map": "/memories/static/js/main.c67f6a56.js.map",
+    "main.6fb7ce37.css.map": "/memories/static/css/main.6fb7ce37.css.map",
+    "main.58a87ee6.js.map": "/memories/static/js/main.58a87ee6.js.map",
     "453.dc839ce1.chunk.js.map": "/memories/static/js/453.dc839ce1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ede2cc89.css",
-    "static/js/main.c67f6a56.js"
+    "static/css/main.6fb7ce37.css",
+    "static/js/main.58a87ee6.js"
   ]
 }
