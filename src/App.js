@@ -10,6 +10,7 @@ function App() {
   const [showGallery, setShowGallery] = useState(false);
 
   const [selectedTypeData, setSelectedTypeData] = useState();
+  const [selectedType, setSelectedType] = useState();
 
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
             <div className='babyshower' onClick={() => {
               setSelectedTypeData(babyShowerData);
               setShowGallery(!showGallery);
+              setSelectedType('babyshower');
             }}>
               BABY SHOWER
             </div>
@@ -32,6 +34,7 @@ function App() {
             <div className='manali' onClick={() => {
               setSelectedTypeData(manaliData);
               setShowGallery(!showGallery);
+              setSelectedType('manali');
             }}>
               MANALI
             </div>
@@ -44,7 +47,7 @@ function App() {
               <span title='Back to home' className="material-symbols-outlined close" onClick={() => setShowGallery(false)}>
                  close
               </span>
-              <EventDetails />
+              <EventDetails selectedType={selectedType}  />
               <Gallery data={selectedTypeData} />
             </div>
           )
