@@ -32,7 +32,13 @@
   background-position: center 15%;
   background-size: cover;
 }
-.marriage, .reception, .manali {
+.manali {
+  background-image: url(./images/manali.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.marriage, .reception {
   background-image: url(./images/soon.webp);
   background-position: center;
   background-size: contain;

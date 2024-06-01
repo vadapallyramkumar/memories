@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import data from './images/data';
 import './gallery.css';
 
-const Gallery = () => {
+const Gallery = ({data}) => {
     const [modal, setModel] = useState(false);
     const [tempimgSrc, setTempimgSrc] = useState('');
 

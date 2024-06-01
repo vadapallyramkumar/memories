@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import './App.css';
 import Gallery from './Gallery';
 import EventDetails from './event';
+import babyShowerData from './images/babyShowrData.js';
+import manaliData from './images/manaliData.js';
 
 function App() {
 
   const [showGallery, setShowGallery] = useState(false);
+
+  const [selectedTypeData, setSelectedTypeData] = useState();
 
   return (
     <>
@@ -13,7 +17,10 @@ function App() {
         !showGallery && (
           <div className="home">
             <h1 className='title'>Our Memories</h1>
-            <div className='babyshower' onClick={() => setShowGallery(!showGallery)}>
+            <div className='babyshower' onClick={() => {
+              setSelectedTypeData(babyShowerData);
+              setShowGallery(!showGallery);
+            }}>
               BABY SHOWER
             </div>
             <div className='marriage'>
@@ -22,7 +29,10 @@ function App() {
             <div className='reception'>
               RECEPTION
             </div>
-            <div className='manali'>
+            <div className='manali' onClick={() => {
+              setSelectedTypeData(manaliData);
+              setShowGallery(!showGallery);
+            }}>
               MANALI
             </div>
           </div>
@@ -35,7 +45,7 @@ function App() {
                  close
               </span>
               <EventDetails />
-              <Gallery />
+              <Gallery data={selectedTypeData} />
             </div>
           )
         }
