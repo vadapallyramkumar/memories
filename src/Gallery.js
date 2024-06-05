@@ -4,15 +4,17 @@ import './gallery.css';
 const Gallery = ({data}) => {
     const [modal, setModel] = useState(false);
     const [tempimgSrc, setTempimgSrc] = useState('');
+    const [selectedImage, setSelectedImage] = useState('');
 
     const getImg = (imgSrc) => {
         setTempimgSrc(imgSrc);
+        setSelectedImage(imgSrc);
         setModel(true);
     }
 
     return(
         <>
-            <div className={modal ? "modal open" : "modal"}>
+            <div className={modal ? "modal open" : "modal"} style={{ backgroundImage:`url(${selectedImage})` }}>
                 <img src={tempimgSrc} alt="selectedImage" />
                 <span className="material-symbols-outlined close" onClick={() => setModel(false)}>
                  close
